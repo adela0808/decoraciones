@@ -1,0 +1,172 @@
+
+body{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;  
+    background: #f1f1f1;
+    
+}
+
+.caja{
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    justify-content: center;
+    width: 100%;
+    background:#bedffb;
+    gap: 14%;
+    z-index: 20;
+}
+.logo{
+    width: 150px;
+    border-radius: 50%;
+
+}
+/* estilo de la barra de navegacion */
+
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 50px 0px;
+    position: relative;
+}
+.menu a{
+    text-transform: uppercase;
+    color: #6b8396;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: rgb(41, 109, 255);
+
+}
+
+
+/*galeria*/
+.cajaDeFotos{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.fotos{   
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    padding: 60px ;
+    gap: 30px;
+}
+.fotos li{
+    display: flex;
+    width: 50%;
+}
+.foto1{
+    width: 100%;
+    border-radius: 5%;
+    border: 2px solid #000000; 
+    box-sizing:border-box;
+}
+@keyframes show {
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+.foto1{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline:--image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+
+/* lista de productos: bloque, texto centrado, ancho 22%, alineación vertical:arriba, 
+margenes laterales 1%, espaciamiento interno padding, color y estilo de bordes */
+ 
+   
+    
+
+/* class + hover modifica cuando pasamos el cursor por arriba del elemento */
+.fotos li:hover{
+    border-color: rgb(33, 91, 252);
+   
+}
+/* class + active: modifica cuando clicamos */
+.fotos li:active{
+    border-color: rgb(179, 252, 95);
+}
+.fotos h2{
+    font-size: 20px;
+    font-weight:bold ;
+}
+.fotos li:hover h2{
+    font-size: 25px;
+}
+
+
+
+/* imagen y texto centrado  */
+footer{
+    width: 100%;
+    text-align: center;
+    background:#bedffb;
+    padding: 20px;
+}
+.copyright{
+    color: #290202;
+    font-size: 13px ;
+}
+
+/* inicia css para nuestra home */
+.principal{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 180px;
+}
+.titulo-principal{
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2em;
+    margin: 0 0 1em;
+
+}
+.categorias{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.categorias ul{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+    gap: 30px;
+}
+
+.foto2{
+    border-radius: 5%;
+    width: 403px;
+    flex-grow: 2; 
+    padding: 10px;
+}
+
+
+
+
+
